@@ -1,0 +1,129 @@
+@import '../../variables';
+
+
+.cardBody{
+    margin: auto;
+    margin-top: 10%;
+    // width: 25.8rem;
+    max-width: 25.8rem;
+    padding: 2.1rem;
+    border-radius: 30px;
+    background-image: -moz-radial-gradient(top,circle,$dark-blue, $very-dark-blue);
+
+    .icons{
+        margin-bottom: 2rem;
+
+        .starContainer{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: $dark-blue;
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                margin: auto;
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+
+    .textContent{
+        h1{
+            color: $white;
+            margin: 0.7rem 0;
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+        p{
+            color: $light-grey;
+            font-size: 15px;
+            font-weight: 100;
+            line-height: 1.5rem;
+
+        }
+    }
+
+    .ratingBtns{
+        margin: 1.8rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            border: none;
+            border-radius: 50%;
+            width: 3.2rem;
+            height: 3.2rem;
+            background-color: $dark-blue;
+            color: $light-grey;
+            cursor: pointer;
+            font-size: 16px;
+
+        }
+        .markedDown{
+            background-color: $light-grey;
+            color: $white;
+        }
+        button:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+
+    .submitBtn{
+        width: 100%;
+        border: none;
+        border-radius: 30px;
+        padding: 0.8rem;
+        color: $white;
+        background-color: $primary;
+        letter-spacing: 0.1rem;
+        font-size: 15px;
+    }
+    .submitBtn:hover{
+        background-color: $white;
+        color: $primary;
+    }
+
+    .thankState{
+
+
+        .thankImg{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+    
+            img{
+                object-fit: contain;
+                object-position: center;
+                
+            }
+        }
+    
+        .submitedRatingText{
+            margin: auto;
+            color: $primary;
+            background-color: $dark-blue;
+            width: max-content;
+            padding: 0.5rem 1.16rem;
+            border-radius: 20px;
+            font-size: small;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+        
+        .textContent{
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+            p{
+                padding: 0 0.1rem;
+            }
+        }
+    }
+
+}
